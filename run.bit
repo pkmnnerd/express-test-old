@@ -1,6 +1,6 @@
 #!/bin/sh
 cd nodetest1
-npm install
 mongod --dbpath nodetest1/data &
+npm install
 npm start
 
