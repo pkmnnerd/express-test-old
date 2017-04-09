@@ -11,7 +11,7 @@ router.post('/api/list', function(req, res, next) {
     var collection = db.get('thelist');
     var string = req.body.text;
     collection.insert({"val":string}, {}, function(err, records) {
-        res.redirect('/list');
+        res.redirect('http://ec2-52-54-54-112.compute-1.amazonaws.com/visit/pkmnnerd/thelist/list');
     });
 });
 
