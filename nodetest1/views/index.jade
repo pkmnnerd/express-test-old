@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1 Welcome to The List
+    form(name="add-estimation", method="post", action="/api/list")
+        div.input
+            span.label Add to The List
+            br
+            input(type="text", name="text")
+        div.actions
+            input(type="submit", value="add")

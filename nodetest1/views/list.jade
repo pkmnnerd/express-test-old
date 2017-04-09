@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1.
+        The List
+    ul
+        each utext, i in textlist
+            li
+                span=utext.val
+    a(href="/") Go back
